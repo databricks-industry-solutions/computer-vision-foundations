@@ -1,4 +1,9 @@
 # Databricks notebook source
+# MAGIC %md 
+# MAGIC You may find this series of notebooks at https://github.com/databricks-industry-solutions/computer-vision-foundations. For more information about this solution accelerator, visit https://www.databricks.com/blog/2021/12/17/enabling-computer-vision-applications-with-the-data-lakehouse.html.
+
+# COMMAND ----------
+
 # MAGIC %md The purpose of this notebook is to manage configuration settings for the notebooks in the computer vision solution accelerator. Please adapt these settings as needed to align the notebook deployment with your environment. 
 
 # COMMAND ----------

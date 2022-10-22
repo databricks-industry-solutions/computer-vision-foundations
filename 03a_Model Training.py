@@ -1,4 +1,9 @@
 # Databricks notebook source
+# MAGIC %md 
+# MAGIC You may find this series of notebooks at https://github.com/databricks-industry-solutions/computer-vision-foundations. For more information about this solution accelerator, visit https://www.databricks.com/blog/2021/12/17/enabling-computer-vision-applications-with-the-data-lakehouse.html.
+
+# COMMAND ----------
+
 # MAGIC %md The purpose of this notebook is to demonstrate patterns supporting computer vision model training.  
 # MAGIC 
 # MAGIC * If you intend to deploy the model as a microservice or as part of a Spark pipeline using user-defined functions, use this **03a** notebook , which uses one of the latest versions of Databricks runtime.  

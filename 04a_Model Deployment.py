@@ -358,13 +358,13 @@ if save_to_registry:
 
   # send data to REST API for scoring
   headers = {'Authorization': 'Bearer {0}'.format(personal_access_token)}
-  response = requests.request(method='POST', headers=headers, url=model_url, json=data_json)
+  # response = requests.request(method='POST', headers=headers, url=model_url, json=data_json) # request is expected to work only after model serving is enabled
   
-  if response.status_code != 200:
-    raise Exception(f'Request failed with status {response.status_code}, {response.text}')
+  # if response.status_code != 200:
+  #   raise Exception(f'Request failed with status {response.status_code}, {response.text}')
 
   # display returned scores
-  print(response.json())
+  # print(response.json())
 
 # COMMAND ----------
 

@@ -22,18 +22,19 @@ from PIL import Image, ImageStat, ExifTags
 
 # COMMAND ----------
 
-# DBTITLE 1,Reset Checkpoint (Optional)
+# DBTITLE 1,Reset Checkpoint and incoming files (Optional)
 # only enable the next line if you intend to rebuild the images table
 dbutils.fs.rm(config['checkpoint_path'], recurse=True)
 dbutils.fs.rm(config['checkpoint_path_inference'], recurse=True)
 dbutils.fs.rm(config['checkpoint_path_inference_73'], recurse=True)
+dbutils.fs.rm(config['incoming_image_file_path'], recurse=True)
+dbutils.fs.cp(config['raw_image_file_path'], config['incoming_image_file_path'], recurse=True)
 
 # COMMAND ----------
 
-# DBTITLE 1,Create Database
-# MAGIC %sql
-# MAGIC drop database if exists cv cascade; -- enable this line if you need to reset the database environment
-# MAGIC create database if not exists cv;
+# DBTITLE 1,Create or recreate Database
+spark.sql(f"""drop database if exists cv cascade""") # enable this line if you need to reset the database environment
+spark.sql(f"""create database if not exists cv location '{config['database_root']}'""")
 
 # COMMAND ----------
 

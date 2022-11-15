@@ -73,9 +73,9 @@ job_json = {
                 ]
             },
             {
-                "job_cluster_key": "cvf_cluster",
+                "job_cluster_key": "cvf_cluster_DBR73",
                 "notebook_task": {
-                    "notebook_path": f"04a_Model Deployment"
+                    "notebook_path": f"03b_Model Training"
                 },
                 "task_key": "cvf_04",
                 "depends_on": [
@@ -85,9 +85,9 @@ job_json = {
                 ]
             },
             {
-                "job_cluster_key": "cvf_cluster_DBR73",
+                "job_cluster_key": "cvf_cluster",
                 "notebook_task": {
-                    "notebook_path": f"03b_Model Training"
+                    "notebook_path": f"04a_Model Deployment"
                 },
                 "task_key": "cvf_05",
                 "depends_on": [
@@ -96,6 +96,7 @@ job_json = {
                     }
                 ]
             },
+            
             {
                 "job_cluster_key": "cvf_cluster_DBR73",
                 "notebook_task": {

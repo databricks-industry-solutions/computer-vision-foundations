@@ -256,7 +256,7 @@ display(spark.table(config['scored_images_73_table']))
 # MAGIC   echo "Unexpected CPU architecture detected"
 # MAGIC else
 # MAGIC   clear
-# MAGIC   echo "CPU archicture verified"
+# MAGIC   echo "CPU architecture verified"
 # MAGIC fi
 # MAGIC 
 # MAGIC ```
@@ -402,7 +402,7 @@ display(spark.table(config['scored_images_73_table']))
 # MAGIC fi
 # MAGIC mkdir $dir
 # MAGIC 
-# MAGIC # write model artifact retrival script
+# MAGIC # write model artifact retrieval script
 # MAGIC download_script="download_model_artifacts.py"
 # MAGIC 
 # MAGIC echo "import mlflow" > $download_script

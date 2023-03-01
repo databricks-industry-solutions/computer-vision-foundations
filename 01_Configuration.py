@@ -17,7 +17,7 @@ if 'config' not in locals():
 # DBTITLE 1,Storage Settings
 config['mount_point'] = '/tmp/cv_foundations/' # location for data files; use a mount path like /mnt/images/ if reading from external storage
 config['database_root'] = '/tmp/cv_foundations/cv/'
-config['raw_image_file_path'] = "s3://db-gtm-industry-solutions/data/rcg/cv/images/"  # where incoming image files land - this is a publically accessible S3 bucket
+config['raw_image_file_path'] = "s3://db-gtm-industry-solutions/data/rcg/cv/images/"  # where incoming image files land - this is a publicly accessible S3 bucket
 config['incoming_image_file_path'] = config['mount_point'] + 'tmp/incoming_image_file_path/'
 config['checkpoint_path'] = config['mount_point'] + 'tmp/image_processing_chkpnt/' # folder where incoming image processing checkpoint resides
 config['checkpoint_path_inference'] = config['mount_point'] + 'tmp/image_inference_chkpnt/'
